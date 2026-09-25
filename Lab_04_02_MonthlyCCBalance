@@ -1,0 +1,25 @@
+public class Lab_04_03_MonthlyCCBalance
+{
+    public static void main(String[] args)
+    {
+        // Declarations
+        double ccBalance = 5000;
+        double interestRate = 0.17;
+        double oneMonthInterest = 0;
+        double twoMonthInterest = 0;
+
+        // User prompt
+        System.out.println("Starting credit card balance is $" + ccBalance);
+        System.out.println("Fixed interest rate: 17%");
+
+        // Interest calculation
+        oneMonthInterest = ccBalance * interestRate;
+        twoMonthInterest = (ccBalance + oneMonthInterest) * interestRate + oneMonthInterest;
+
+        //Output to user
+        System.out.println("Interest due after one month = $" + oneMonthInterest);
+        System.out.println("Interest due after two months = $" + twoMonthInterest);
+
+    }
+
+}
