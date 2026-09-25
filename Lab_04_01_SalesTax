@@ -1,25 +1,25 @@
-public class Lab_04_03_MonthlyCCBalance
-{
+public class Lab_04_01_SalesTax {
+
     public static void main(String[] args)
     {
         // Declarations
-        double ccBalance = 5000;
-        double interestRate = 0.17;
-        double oneMonthInterest = 0;
-        double twoMonthInterest = 0;
+        double purchasePrice = 0;
+        double salesTaxAmount = 0;
+        final double SALES_TAX_RATE = .05;
 
-        // User prompt
-        System.out.println("Starting credit card balance is $" + ccBalance);
-        System.out.println("Fixed interest rate: 17%");
+        // User Prompt
+        System.out.println("Enter the purchase price: ");
 
-        // Interest calculation
-        oneMonthInterest = ccBalance * interestRate;
-        twoMonthInterest = (ccBalance + oneMonthInterest) * interestRate + oneMonthInterest;
+        //User Input Simulation
+        System.out.println("150)");
+        purchasePrice = 150;
 
-        //Output to user
-        System.out.println("Interest due after one month = $" + oneMonthInterest);
-        System.out.println("Interest due after two months = $" + twoMonthInterest);
+        // Calculate the Sales Tax Amount
+        salesTaxAmount = purchasePrice * SALES_TAX_RATE;
 
+        // Output to User
+        System.out.println("The sales tax for the purchase price of $" +
+                purchasePrice + " is $" + salesTaxAmount + ".");
     }
-
 }
+
