@@ -1,0 +1,35 @@
+public class Lab_04_02_YearlyMaintenanceCost
+{
+    public static void main(String[] args)
+    {
+        // Declarations
+        double springCost = 0;
+        double summerCost = 0;
+        double fallCost = 0;
+        double winterCost = 0;
+        double yearlyCost = 0;
+
+        // User Prompt
+        System.out.println("Enter the home maintenance costs for each season.");
+
+        // User Input
+        System.out.println("Spring: 200");
+        springCost = 200;
+
+        System.out.println("Summer: 150");
+        summerCost = 150;
+
+        System.out.println("Fall: 175");
+        fallCost = 175;
+
+        System.out.println("Winter: 300");
+        winterCost = 300;
+
+        // Yearly total
+        yearlyCost = springCost + summerCost + fallCost + winterCost;
+
+        System.out.println("The yearly maintenance from Spring, Summer, Fall, and Winter is $" + yearlyCost + ".");
+    }
+
+
+}
